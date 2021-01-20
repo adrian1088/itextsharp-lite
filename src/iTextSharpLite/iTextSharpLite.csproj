@@ -1,0 +1,72 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFrameworks>net5.0;netstandard2.1;net461</TargetFrameworks>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<Authors>Mehdi Dehghani</Authors>
+		<Company>Rightek</Company>
+		<Copyright>iText, Rightek</Copyright>
+
+		<Version>4.6.1</Version>
+		<AssemblyVersion>4.6.1.0</AssemblyVersion>
+		<FileVersion>4.6.1.0</FileVersion>
+
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+
+		<RepositoryUrl>https://github.com/rightek/itextsharp-lite</RepositoryUrl>
+		<PackageProjectUrl>https://github.com/rightek/itextsharp-lite</PackageProjectUrl>
+		<PackageReadmeFile>https://github.com/rightek/itextsharp-lite/blob/master/README.md</PackageReadmeFile>
+
+		<PackageId>iTextSharpLite</PackageId>
+		<Title>iTextSharpLite</Title>
+		<Description>iTextSharp 4.1.6 without encryption and BouncyCastle.</Description>
+		<PackageTags>itextsharp pdf itext net5</PackageTags>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Remove="Pdf\Fonts\Courier-Bold.afm" />
+		<None Remove="Pdf\Fonts\Courier-BoldOblique.afm" />
+		<None Remove="Pdf\Fonts\Courier-Oblique.afm" />
+		<None Remove="Pdf\Fonts\Courier.afm" />
+		<None Remove="Pdf\Fonts\Helvetica-Bold.afm" />
+		<None Remove="Pdf\Fonts\Helvetica-BoldOblique.afm" />
+		<None Remove="Pdf\Fonts\Helvetica-Oblique.afm" />
+		<None Remove="Pdf\Fonts\Helvetica.afm" />
+		<None Remove="Pdf\Fonts\Symbol.afm" />
+		<None Remove="Pdf\Fonts\Times-Bold.afm" />
+		<None Remove="Pdf\Fonts\Times-BoldItalic.afm" />
+		<None Remove="Pdf\Fonts\Times-Italic.afm" />
+		<None Remove="Pdf\Fonts\Times-Roman.afm" />
+		<None Remove="Pdf\Fonts\ZapfDingbats.afm" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<EmbeddedResource Include="Pdf\Fonts\Courier-Bold.afm" />
+		<EmbeddedResource Include="Pdf\Fonts\Courier-BoldOblique.afm" />
+		<EmbeddedResource Include="Pdf\Fonts\Courier-Oblique.afm" />
+		<EmbeddedResource Include="Pdf\Fonts\Courier.afm" />
+		<EmbeddedResource Include="Pdf\Fonts\Helvetica-Bold.afm" />
+		<EmbeddedResource Include="Pdf\Fonts\Helvetica-BoldOblique.afm" />
+		<EmbeddedResource Include="Pdf\Fonts\Helvetica-Oblique.afm" />
+		<EmbeddedResource Include="Pdf\Fonts\Helvetica.afm" />
+		<EmbeddedResource Include="Pdf\Fonts\Symbol.afm" />
+		<EmbeddedResource Include="Pdf\Fonts\Times-Bold.afm" />
+		<EmbeddedResource Include="Pdf\Fonts\Times-BoldItalic.afm" />
+		<EmbeddedResource Include="Pdf\Fonts\Times-Italic.afm" />
+		<EmbeddedResource Include="Pdf\Fonts\Times-Roman.afm" />
+		<EmbeddedResource Include="Pdf\Fonts\ZapfDingbats.afm" />
+	</ItemGroup>
+
+	<ItemGroup Condition="'$(TargetFramework)' == 'net5.0'">
+		<PackageReference Include="System.Drawing.Common" Version="5.0.0" />
+	</ItemGroup>
+
+	<ItemGroup Condition="'$(TargetFramework)' == 'netstandard2.1'">
+		<PackageReference Include="System.Drawing.Common" Version="4.7.1" />
+	</ItemGroup>
+
+</Project>

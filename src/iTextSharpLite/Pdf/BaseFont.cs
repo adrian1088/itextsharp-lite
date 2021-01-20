@@ -233,7 +233,7 @@ namespace iTextSharp.Pdf
         public const bool NOT_CACHED = false;
 
         /** The path to the font resources. */
-        public const string RESOURCE_PATH = "iTextSharp-LGPL.Pdf.Fonts.";
+        public const string RESOURCE_PATH = "iTextSharpLite.Pdf.Fonts.";
         /** The fake CID code that represents a newline. */
         public const char CID_NEWLINE = '\u7fff';
 

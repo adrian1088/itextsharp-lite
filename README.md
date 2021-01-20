@@ -6,7 +6,7 @@ iTextSharp 4.1.6 without encryption and BouncyCastle.
 `PM> Install-Package iTextSharpLite`
 
 ## License
-LGPL
+MIT
 
 ---
 Made with ♥ by people @ [Rightek](http://rightek.ir)
